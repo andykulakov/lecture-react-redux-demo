@@ -1,0 +1,71 @@
+body {
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+h1, h2 {
+  color: saddlebrown;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+}
+
+section ul li button {
+  height: 20px;
+  background-color: saddlebrown;
+  color: white;
+  border: none;
+  transition: background-color 200ms;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+section ul li button[disabled] {
+  background-color: gray;
+}
+
+section ul li button[disabled]:hover {
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+section ul li button:hover {
+  cursor: pointer;
+  background-color: sienna;
+}
+
+section ul li img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section ul li + li {
+  margin-top: 20px;
+}
+
+.section-friends-list ul li button {
+  background-color: darkred;
+}
+
+.section-friends-list ul li button:hover {
+  background-color: red;
+}
